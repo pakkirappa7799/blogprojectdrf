@@ -29,7 +29,7 @@ schema_view = swagger_get_schema_view(
     ),
     public=True,
 )
-
+admin.site.site_header = "Django With Jenkins"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
