@@ -29,7 +29,9 @@ schema_view = swagger_get_schema_view(
     ),
     public=True,
 )
-admin.site.site_header = "Django With Jenkins"
+admin.site.site_header = "Django With Jenkins1"
+admin.site.site_title = "Django With Jenkins2"
+admin.site.index_title = "Django With Jenkins3"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
