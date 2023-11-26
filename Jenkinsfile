@@ -11,6 +11,7 @@ node {
 
         stage 'Publish results'
         echo "Build successful: ${env.JOB_NAME}#${env.BUILD_NUMBER} - Open in Jenkins: ${env.BUILD_URL}"
+        echo "Build successful-01: ${env.JOB_NAME}#${env.BUILD_NUMBER} - Open in Jenkins: ${env.BUILD_URL}"
     } catch (err) {
         echo "Build failed :face_with_head_bandage: ${env.JOB_NAME}#${env.BUILD_NUMBER} - Open in Jenkins: ${env.BUILD_URL}"
         throw err
