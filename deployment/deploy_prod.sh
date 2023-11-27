@@ -2,7 +2,7 @@
 
 ssh root@44.202.152.45 <<EOF
   cd /root/Pakkirappa/blogprojectdrf 
-  git pull 
+  git pull origin master
   source venv/bin/activate
   python manage.py makemigrations
   python manage.py migrate
